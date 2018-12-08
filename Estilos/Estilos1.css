@@ -1,0 +1,76 @@
+@font-face {
+  font-family:"Dancing-script";
+  src:url(https://fonts.google.com/specimen/Dancing+Script);
+
+}
+body{
+  background-color: #02010a;
+  align-content: center;
+}
+#Cabecera{
+  width:80%;
+  height:75px;
+  border:1px solid black;
+  border-radius: 10px;
+  background: #5b7989;
+  color:white;
+  text-shadow: 0px 2px #02010a;
+  display:inline-block;
+  font-family:Dancing-script;
+  margin:0% 10% 0% 10%;
+}
+#Cabecera h1{
+  float:left;
+  position:absolute;
+  font-family: Dancing-script;
+
+}
+#Cabecera nav{
+  float:right;
+  position:relative;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+
+}
+#imagen-central{
+  width:80%;
+  height:80%;
+  background-color:#82c3a6;
+  margin: 0% 10% 0% 10%;
+  text-align: center;
+  border-radius: 10px;
+}
+#imagen-central img{
+  width:70%;
+  margin: 3% 0% 1% 0%;
+  position: relative;
+
+}
+#Secundario{
+    display:flex inline;
+    flex-direction: row;
+    background: #d5c75f;
+    border: 1px solid black;
+    border-radius: 10px;
+    width:80%;
+    height:300px;
+    margin: 0% 10% 0% 10%;
+    text-align: center;
+    align-items:center;
+}
+.Imagen21{
+  width:40%;
+  float:left;
+  flex-grow: 2;
+  flex-wrap: wrap;
+}
+.Imagen21 img{
+  width:70%;
+}
+.Imagen22{
+  width:40%;
+  float:right;
+  flex-grow: 2;
+  flex-wrap: wrap;
+}
