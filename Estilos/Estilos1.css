@@ -9,7 +9,7 @@ body{
 }
 #Cabecera{
   width:80%;
-  height:75px;
+  height:85px;
   border:1px solid black;
   border-radius: 10px;
   background: #5b7989;
@@ -27,7 +27,7 @@ body{
 }
 #Cabecera nav{
   float:right;
-  position:relative;
+  position:relative bottom;
   padding-top: 1%;
   padding-bottom: 1%;
   padding-right: 1%;
@@ -60,17 +60,50 @@ body{
     align-items:center;
 }
 .Imagen21{
-  width:40%;
+  width:50%;
   float:left;
   flex-grow: 2;
   flex-wrap: wrap;
+  margin-top: 5%;
 }
 .Imagen21 img{
-  width:70%;
+  width:40%;
 }
 .Imagen22{
   width:40%;
   float:right;
-  flex-grow: 2;
+  flex-grow: 1;
   flex-wrap: wrap;
+  margin-top:5%;
+  margin-right: 5%;
+}
+@media screen and (max-width:900px){
+  #Cabecera{
+    width:100%;
+    margin:0% 0% 0% 0%;
+
+  }
+
+  #imagen-central{
+    width:100%;
+    margin: 0% 0% 0% 0%;
+
+  }
+  #Secundario{
+    width:100%;
+    margin: 0% 0% 0% 0%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .Imagen21 img{
+    width:70%;
+    height:auto;
+  }
+  .Imagen22 img{
+    width:90%;
+    height:auto;
+    margin-bottom: 10%;
+    margin-left: 5%;
+  }
 }
