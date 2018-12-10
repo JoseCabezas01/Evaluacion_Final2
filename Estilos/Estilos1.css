@@ -1,28 +1,24 @@
-@font-face {
-  font-family:"Dancing-script";
-  src:url(https://fonts.google.com/specimen/Dancing+Script);
 
-}
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 body{
   background-color: #02010a;
   align-content: center;
+  font-family: 'Dancing Script', cursive;
 }
 #Cabecera{
   width:80%;
-  height:85px;
+  height:70px;
   border:1px solid black;
   border-radius: 10px;
   background: #5b7989;
   color:white;
   text-shadow: 0px 2px #02010a;
   display:inline-block;
-  font-family:Dancing-script;
   margin:0% 10% 0% 10%;
 }
 #Cabecera h1{
   float:left;
   position:absolute;
-  font-family: Dancing-script;
 
 }
 #Cabecera nav{
@@ -31,6 +27,9 @@ body{
   padding-top: 1%;
   padding-bottom: 1%;
   padding-right: 1%;
+  font-size: 2em;
+  color:white;
+  text-decoration-color: white;
 
 }
 #imagen-central{
@@ -45,43 +44,96 @@ body{
   width:70%;
   margin: 3% 0% 1% 0%;
   position: relative;
+  box-shadow: 2px 2px 0px #02010a;
 
 }
 #Secundario{
-    display:flex inline;
+    display:flex;
     flex-direction: row;
     background: #d5c75f;
     border: 1px solid black;
     border-radius: 10px;
     width:80%;
-    height:300px;
+    height:auto;
     margin: 0% 10% 0% 10%;
     text-align: center;
     align-items:center;
 }
 .Imagen21{
-  width:50%;
+  width:60%;
   float:left;
   flex-grow: 2;
   flex-wrap: wrap;
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 .Imagen21 img{
-  width:40%;
+  width:70%;
+  box-shadow: 2px 2px 0px #02010a;
+}
+
+.Imagen21 img:hover{
+  animation: Animacion1 1s;
+}
+@keyframes Animacion1{
+  from{
+    transform: rotate(0deg);
+    box-shadow: 2px 2px 0px #02010a;
+  }
+  to{
+    transform: rotate(10deg);
+    box-shadow: 2px 2px 0px #82c3a6;
+  }
 }
 .Imagen22{
-  width:40%;
+  width:60%;
   float:right;
-  flex-grow: 1;
+  flex-grow: 2;
   flex-wrap: wrap;
   margin-top:5%;
-  margin-right: 5%;
+  margin-bottom: 5%;
+}
+.Imagen22 img{
+  width:70%;
+  box-shadow: 2px 2px 0px #02010a;
+}
+.Imagen22 img:hover{
+  animation: Animacion2 2s;
+}
+@keyframes Animacion2{
+  from{
+    transform: translateX(0px) translateY(0px);
+    box-shadow: 2px 2px 0px #02010a;
+  }
+  to{
+    transform: translateX(20px) translateY(-5px);
+    box-shadow: 2px 2px 0px #82c3a6;
+  }
+}
+footer{
+  width:80%;
+  margin:0% 10% 0% 10%;
+  background: #C6d5c5;
 }
 @media screen and (max-width:900px){
   #Cabecera{
     width:100%;
+    height: auto;
     margin:0% 0% 0% 0%;
-
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+  }
+  #Cabecera h1{
+    text-align: center;
+    position:relative;
+  }
+  #Barra_de_navegacion{
+    flex-wrap: wrap;
+    width:100%;
+    margin-top:5%;
+    margin-bottom: 5%;
+    text-align: center;
   }
 
   #imagen-central{
@@ -97,13 +149,15 @@ body{
     text-align: center;
   }
   .Imagen21 img{
-    width:70%;
+    width:50%;
     height:auto;
+    margin-bottom: 0%;
+    margin-top: 1%;
   }
+
   .Imagen22 img{
-    width:90%;
+    width:50%;
     height:auto;
-    margin-bottom: 10%;
-    margin-left: 5%;
+    margin-top:1%;
   }
 }
