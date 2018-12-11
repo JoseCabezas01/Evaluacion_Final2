@@ -33,7 +33,7 @@ body{
 #Cabecera nav a{
   color:white;
 }
-#Cabecera nav a:visited{
+#Cabecera nav a:active{
   text-decoration: none;
 }
 #imagen-central{
@@ -70,6 +70,11 @@ body{
   flex-wrap: wrap;
   margin-top: 5%;
   margin-bottom: 5%;
+  text-align: center;
+  font-size: 2em;
+}
+.Imagen21 a, .Imagen22 a{
+  color:white;
 }
 .Imagen21 img{
   width:70%;
@@ -96,6 +101,10 @@ body{
   flex-wrap: wrap;
   margin-top:5%;
   margin-bottom: 5%;
+  text-align: center;
+  font-size: 2em;
+  color:white;
+
 }
 .Imagen22 img{
   width:70%;
